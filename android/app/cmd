@@ -1,0 +1,17 @@
+
+
+keytool -list -v -keystore C:\Users\admin\Documents\Projects\HealthConet\healthconnect-frontend-mobile\android\app\my-upload-key.keystore -alias my-key-alias -storepass 123456 -keypass 123456 
+
+
+keytool -list -v -keystore C:\Users\admin\Documents\Projects\HealthConet\healthconnect-frontend-mobile\android\app\debug.keystore -alias androiddebugkey -storepass android -keypass android
+
+
+
+facebook 
+
+keytool -exportcert -alias my-key-alias -keystore C:\Users\admin\Documents\Projects\HealthConet\healthconnect-frontend-mobile\android\app\my-upload-key.keystore | openssl sha1 -binary | openssl base64
+
+
+keytool -exportcert -alias androiddebugkey -keystore C:\Users\admin\Documents\Projects\HealthConet\healthconnect-frontend-mobile\android\app\debug.keystore | "PATH_TO_OPENSSL_LIBRARY\bin\openssl" sha1 -binary | "PATH_TO_OPENSSL_LIBRARY\bin\openssl" base64
+
+

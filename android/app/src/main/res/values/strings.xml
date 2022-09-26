@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HealthConet</string>
+    <string name="facebook_app_id">439497624673645</string>
+    <string name="fb_login_protocol_scheme">fb439497624673645</string>
+    <string name="facebook_client_token">04ac2ccb2b45d86852c40acc39c3e8bb</string>
+</resources>
